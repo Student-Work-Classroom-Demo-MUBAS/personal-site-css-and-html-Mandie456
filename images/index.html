@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mandie Luka - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <div class="content">
+        <h1><span>MANDIE</span><br/><strong>LUKA</strong></h1>
+        <p class="title">Computer Engineer</p>
+        <div class="icons">
+          <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-envelope"></i>
+          <i class="fas fa-phone"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-text">
+      <h2>ABOUT</h2>
+      <div class="underline"></div>
+      <p>
+        Hi, I'm Mandie Luka, a final-year Computer Engineering student with a strong passion for technology, problem-solving, and creative design. I enjoy building smart, user-friendly solutions whether it's through web development, embedded systems, or software projects.
+      </p>
+      <button onclick="document.querySelector('.portfolio').scrollIntoView({behavior: 'smooth'})">More</button>
+    </div>
+    <div class="about-photo">
+      <img src="trina.jpg" alt="Mandie Luka" />
+      <div class="contact-info">
+        <p><i class="fas fa-map-marker-alt"></i> Bypass, Lilongwe (Malawi)</p>
+        <p><i class="fas fa-phone"></i> 0899986790</p>
+        <p><i class="fas fa-envelope"></i> mandie43@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <h2>Projects Accomplished</h2>
+    <div class="project">
+      <h3>Smart Tap</h3>
+      <img src="tap.jpg" alt="Smart Tap Project" />
+      <p>
+        Designed an embedded system that uses an IR sensor to detect hand presence and control a water valve.
+        Incorporated minimalistic water wastage. Integrated a GSM module to send SMS alerts to maintenance
+        when a fault is detected. Project focused on automation, water conservation, and real-time monitoring.
+      </p>
+    </div>
+    <div class="project">
+      <h3>Web Calculator</h3>
+      <p>
+        A basic simple web created using HTML, CSS, and Java. Check it out on my GitHub:
+        <a href="https://github.com/Mandie456/sika.calculator" target="_blank">sika.calculator</a>
+      </p>
+    </div>
+
+    <div class="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Bachelor of Electronics and Computer Engineering</li>
+        <li>Expected Graduation: 2026</li>
+        <li>Related Courses: Embedded Systems, Internet Web Services</li>
+      </ul>
+    </div>
+
+    <div class="work">
+      <h2>Work Experience</h2>
+      <p>Database Intern at TNM (13th June - 15th November, 2024)</p>
+    </div>
+
+    <div class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>SQL: Writing complex queries to retrieve, update, and manage data</li>
+        <li>MySQL: Creating and managing databases and tables</li>
+        <li>Relational Databases: Understanding ER diagrams, table relationships</li>
+        <li>Linux (Ubuntu, CentOS, Red Hat): Command line, package management, permissions</li>
+        <li>Server Management: Navigating Linux environments for database services</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'});">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea rows="5" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.content {
+  color: white;
+}
+
+.content h1 {
+  font-size: 4rem;
+  color: #dcdcdc;
+}
+
+.content h1 strong {
+  color: white;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin: 10px 0 20px;
+}
+
+.icons i {
+  font-size: 1.3rem;
+  margin-right: 20px;
+  color: #eee;
+  cursor: pointer;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background-color: #060606;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+  margin-right: 30px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  background-color: #00bcd4;
+  margin: 10px 0 20px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-text button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.about-text button:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.about-photo {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.about-photo img {
+  width: 350px;
+  border-radius: 50%;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #00bcd4;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 60px 10%;
+  background-image: url("wood.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+.project img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 0 10px #000;
+}
+
+.project,
+.education,
+.work,
+.skills {
+  margin-bottom: 40px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.project p,
+.education ul,
+.skills ul,
+.work p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.education ul,
+.skills ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+a {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #1a0e0e;
+  padding: 50px 10%;
+  color: white;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 20px;
+  background: #c1b6b6;
+  font-size: 1rem;
+}
+
+.contact button {
+  width: 120px;
+  padding: 10px;
+  background: #c1b6b6;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #00bcd4;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero .overlay {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .about-text button {
+    margin-top: 20px;
+  }
+}
