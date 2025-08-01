@@ -11,6 +11,7 @@ body, html {
   scroll-behavior: smooth;
 }
 
+
 /* Hero Section */
 .hero {
   background-image: url("background.jpg");
@@ -20,6 +21,31 @@ body, html {
   position: relative;
 }
 
+.main-nav{
+  position: fixed;
+  top:20px;
+  right: 30px;
+  z-index:0 10;
+  text-align: right;
+}
+
+.main-nav a {
+  margin: 0 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.main-nav a:hover {
+  color: white;
+}
+
+/* .top-right-button{
+
+} */
+
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
@@ -28,6 +54,12 @@ body, html {
   justify-content: start;
   align-items: center;
   padding: 0 5%;
+}
+.section-divider{
+  border: none;
+  height: 10px;
+  background-color: #ccc;
+  margin: 0;
 }
 
 .content {
@@ -132,7 +164,8 @@ body, html {
 
 /* Portfolio Section */
 .portfolio {
-  padding: 60px 10%;
+  padding: 50px 10%;
+  min-height: 100vh; /* full screen height */
   background-image: url("wood.jpg");
   background-size: cover;
   background-position: center;
@@ -141,23 +174,75 @@ body, html {
 
 .portfolio h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #00bcd4;
 }
 
+.projects-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project.left {
+  width: 55%;
+}
+
+.project.right {
+  width: 40%;
+  margin-top: 60px;
+}
+
+.project h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* .image-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; */
+  /* max-height: 100%; */
+  /* border-radius: 70px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+} */
+
 .project img {
   width: 100%;
-  max-width: 400px;
+  max-width: 800px; /* increased image size */
+  height: auto;
   border-radius: 10px;
-  margin: 15px 0;
+  margin: 20px 0;
   box-shadow: 0 0 10px #000;
 }
 
-.project,
+.paragraph p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
 .education,
 .work,
 .skills {
   margin-bottom: 40px;
+  color: white;
+  font-size: 2rem;
+}
+
+.project{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  width: 80vw;
+  min-height: 40vh;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .project h3 {
@@ -169,7 +254,8 @@ body, html {
 .education ul,
 .skills ul,
 .work p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: white;
   line-height: 1.6;
 }
 
@@ -249,4 +335,17 @@ a:hover {
   .about-text button {
     margin-top: 20px;
   }
+}
+.resume {
+  height: 100vh;
+  background-image: url('resume.png');
+  background-size: cover;
+  background-position: center;
+  /* display: flex; */
+  /* justify-content: right; */
+  /* padding: 0 20px; */
+}
+
+.paragraph {
+  position: right;
 }

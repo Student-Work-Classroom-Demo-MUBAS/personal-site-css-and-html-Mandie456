@@ -10,7 +10,14 @@
 <body>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="hero">
+    <nav class="main-nav">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="resume.html">my resume</a>
+      <!-- <a href="resume.html" class="top-right-button">my resume</a> -->
+
+    </nav>
     <div class="overlay">
       <div class="content">
         <h1><span>MANDIE</span><br/><strong>LUKA</strong></h1>
@@ -23,9 +30,10 @@
       </div>
     </div>
   </section>
+  <hr class="section-divider"/>
 
   <!-- About Section -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="about-text">
       <h2>ABOUT</h2>
       <div class="underline"></div>
@@ -43,55 +51,45 @@
       </div>
     </div>
   </section>
+  <hr class="section-divider"/>
 
   <!-- Portfolio Section -->
-  <section class="portfolio">
-    <h2>Projects Accomplished</h2>
-    <div class="project">
+  <section class="portfolio" id="portfolio">
+  <h2>Projects Accomplished</h2>
+  <div class="projects-wrapper">
+
+    <div class="project left">
       <h3>Smart Tap</h3>
-      <img src="tap.jpg" alt="Smart Tap Project" />
-      <p>
-        Designed an embedded system that uses an IR sensor to detect hand presence and control a water valve.
-        Incorporated minimalistic water wastage. Integrated a GSM module to send SMS alerts to maintenance
-        when a fault is detected. Project focused on automation, water conservation, and real-time monitoring.
-      </p>
+      <div class="image-container">
+        <img src="tap.jpg" alt="Smart Tap Project" />
+      </div>
+      <div class="paragraph">
+        <p>
+          Designed an embedded system that uses an IR sensor to detect hand presence and control a water valve.
+          Incorporated minimalistic water wastage. Integrated a GSM module to send SMS alerts to maintenance
+          when a fault is detected. Project focused on automation, water conservation, and real-time monitoring.
+        </p>
+      </div>
     </div>
-    <div class="project">
-      <h3>Web Calculator</h3>
+
+    <div class="project right">
+      <h3>Web Calculator</h3> <!-- moved above paragraph -->
       <p>
         A basic simple web created using HTML, CSS, and Java. Check it out on my GitHub:
         <a href="https://github.com/Mandie456/sika.calculator" target="_blank">sika.calculator</a>
+        <br>
+        <a href="https://www.canva.com/design/DAGuo-c0r38/DmKXCDcO8aXJsZ0EKVx0Ww/edit?utm_content=DAGuo-c0r38&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="nooper">canva Design Project</a>
       </p>
     </div>
 
-    <div class="education">
-      <h2>Education</h2>
-      <ul>
-        <li>Bachelor of Electronics and Computer Engineering</li>
-        <li>Expected Graduation: 2026</li>
-        <li>Related Courses: Embedded Systems, Internet Web Services</li>
-      </ul>
-    </div>
+  </div>
+</section>
 
-    <div class="work">
-      <h2>Work Experience</h2>
-      <p>Database Intern at TNM (13th June - 15th November, 2024)</p>
-    </div>
+    <hr class="section-divider"/>
 
-    <div class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>SQL: Writing complex queries to retrieve, update, and manage data</li>
-        <li>MySQL: Creating and managing databases and tables</li>
-        <li>Relational Databases: Understanding ER diagrams, table relationships</li>
-        <li>Linux (Ubuntu, CentOS, Red Hat): Command line, package management, permissions</li>
-        <li>Server Management: Navigating Linux environments for database services</li>
-      </ul>
-    </div>
-  </section>
-
+    
   <!-- Contact Section -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2>Contact Me</h2>
     <form onsubmit="event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'});">
       <input type="text" placeholder="Name" required />
