@@ -87,4 +87,4 @@ README.md
 
 ## ✍️ Student Reflection (To be completed by you)
 
-Add your reflection here. Discuss your design choices, what you found difficult, and what you're most proud of (minimum 100 words).
+Add your reflection here. so i decided to add some dull colors to make my design look more proffesional but it was quiet a challange using them canva because am a beginner and i didnt save some files and i lost them another thing that i found difficult is stying my project accomplished page so if you view my website on the projects accomplished that is not the look i was aimig for as the image of the tap is small and the whole section doesnot look like that f a proffesional web dveloper and another was about the contact section i wanted it to be small and nice and not the boxes to fill out the whole page as it has don when open it. After all is said and done am proud that i learnt alot abput sections, sections divider, navigations, links and also other things but m not confident to do them because actaully its alot
